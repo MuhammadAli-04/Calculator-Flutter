@@ -45,6 +45,7 @@ class Calculator {
     try {
       _result = _text.interpret().toStringAsFixed(
           _text.interpret().truncateToDouble() == _text.interpret() ? 0 : 2);
+      // ignore: empty_catches
     } catch (e) {}
   }
 
